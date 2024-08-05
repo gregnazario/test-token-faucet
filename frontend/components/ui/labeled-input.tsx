@@ -14,7 +14,6 @@ export const LabeledInput: FC<{
 }> = ({
   label,
   required,
-  tooltip,
   disabled,
   value,
   onChange,
@@ -23,7 +22,7 @@ export const LabeledInput: FC<{
 }) => {
   return (
     <div className="flex flex-col item-center space-y-4 mt-4">
-      <Label htmlFor={id} tooltip={tooltip}>
+      <Label htmlFor={id}>
         {label} {required ? "" : "(optional)"}
       </Label>
       <Input
