@@ -15,9 +15,9 @@ module deployer::test_faucet {
     /// Caller is not the deployer
     const E_NOT_DEPLOYER: u64 = 1;
 
-    const DECIMALS: u8 = 4;
+    const DECIMALS: u8 = 6;
 
-    const TFC: vector<u8> = b"Greg's Test Faucet Coin";
+    const TFC: vector<u8> = b"Greg's Test Faucet Coin with 6 decimals";
 
     struct TestFaucetCoin {
         coin: u64,
